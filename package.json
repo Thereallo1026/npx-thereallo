@@ -1,0 +1,52 @@
+{
+  "name": "npx-thereallo",
+  "version": "1.0.0",
+  "description": "Run `npx npx-thereallo` to view Thereallo's profile in your terminal",
+  "type": "module",
+  "bin": {
+    "npx-thereallo": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "bun src/cli.tsx",
+    "build": "bun build src/cli.tsx --outdir dist --target node --external ink --external ink-big-text --external ink-gradient --external ink-link --external react --external @inkjs/ui",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "bun run build",
+    "check": "ultracite check",
+    "fix": "ultracite fix"
+  },
+  "keywords": [
+    "cli",
+    "profile",
+    "thereallo",
+    "ink"
+  ],
+  "author": "Thereallo <personal@thereallo.dev>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.7",
+    "@types/bun": "latest",
+    "@types/react": "^19.2.14",
+    "lint-staged": "^16.4.0",
+    "typescript": "^5",
+    "ultracite": "7.3.2"
+  },
+  "dependencies": {
+    "@inkjs/ui": "^2.0.0",
+    "ink": "^6.8.0",
+    "ink-big-text": "^2.0.0",
+    "ink-gradient": "^4.0.0",
+    "ink-link": "^5.0.0",
+    "react": "^19.2.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": [
+      "bun x ultracite fix"
+    ]
+  }
+}
