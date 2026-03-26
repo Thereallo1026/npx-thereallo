@@ -1,10 +1,10 @@
 {
-  "name": "npx-thereallo",
-  "version": "1.0.0",
-  "description": "Run `npx npx-thereallo` to view Thereallo's profile in your terminal",
+  "name": "thereallo",
+  "version": "1.0.1",
+  "description": "Thereallo's portfilio inside of the terminal.",
   "type": "module",
   "bin": {
-    "npx-thereallo": "./dist/cli.js"
+    "thereallo": "./dist/cli.js"
   },
   "scripts": {
     "dev": "bun src/cli.tsx",
@@ -20,14 +20,15 @@
     "thereallo",
     "ink"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thereallo1026/npx-thereallo.git"
+  },
   "author": "Thereallo <personal@thereallo.dev>",
   "license": "MIT",
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": ">=18"
-  },
   "devDependencies": {
     "@biomejs/biome": "2.4.7",
     "@types/bun": "latest",
