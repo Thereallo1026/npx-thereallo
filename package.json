@@ -24,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/Thereallo1026/npx-thereallo.git"
   },
-  "author": "Thereallo <personal@thereallo.dev>",
+  "author": "Thereallo",
   "license": "MIT",
   "files": [
     "dist"
