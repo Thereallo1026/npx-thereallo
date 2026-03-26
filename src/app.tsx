@@ -1,6 +1,7 @@
 import { Box, Text, useApp } from "ink";
 import BigText from "ink-big-text";
 import Gradient from "ink-gradient";
+import Link from "ink-link";
 import React from "react";
 
 const divider = "─".repeat(48);
@@ -111,7 +112,9 @@ export default function App() {
       <Box flexDirection="column" gap={0} marginY={1}>
         {projects.map((p) => (
           <Row key={p.name} label={p.name}>
-            <Text color="cyan">{p.url.replace("https://", "")}</Text>
+            <Link url={p.url}>
+              <Text color="cyan">{p.url.replace("https://", "")}</Text>
+            </Link>
             <Text dimColor>
               {"  "}
               {p.desc}
@@ -126,7 +129,9 @@ export default function App() {
       <Box flexDirection="column" gap={0} marginTop={1}>
         {socials.map((s) => (
           <Row key={s.label} label={s.label}>
-            <Text color="cyan">{s.url}</Text>
+            <Link url={s.url}>
+              <Text color="cyan">{s.url}</Text>
+            </Link>
           </Row>
         ))}
       </Box>
