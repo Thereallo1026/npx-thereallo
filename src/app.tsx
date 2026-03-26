@@ -15,7 +15,7 @@ const socials: SocialLink[] = [
   { label: "twitter", url: "https://twitter.com/Thereallo1026" },
   { label: "bluesky", url: "https://bsky.app/profile/cognosphere.bsky.social" },
   { label: "telegram", url: "https://t.me/Thereallo1026" },
-  { label: "email", url: "mailto:personal@thereallo.dev" },
+  { label: "email", url: "personal@thereallo.dev" },
   { label: "web", url: "https://thereallo.dev" },
 ];
 
