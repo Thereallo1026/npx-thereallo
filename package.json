@@ -1,6 +1,6 @@
 {
   "name": "thereallo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Thereallo's portfilio inside of the terminal.",
   "type": "module",
   "bin": {
