@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "bun src/cli.tsx",
-    "build": "bun build src/cli.tsx --outdir dist --target node --external ink --external ink-big-text --external ink-gradient --external ink-link --external react --external @inkjs/ui && chmod +x dist/cli.js",
+    "build": "bun build src/cli.tsx --outdir dist --target node --external ink --external ink-big-text --external ink-gradient --external react --external @inkjs/ui && chmod +x dist/cli.js",
     "start": "node dist/cli.js",
     "prepublishOnly": "bun run build",
     "check": "ultracite check",
@@ -42,7 +42,6 @@
     "ink": "^6.8.0",
     "ink-big-text": "^2.0.0",
     "ink-gradient": "^4.0.0",
-    "ink-link": "^5.0.0",
     "react": "^19.2.4"
   },
   "lint-staged": {
