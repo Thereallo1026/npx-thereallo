@@ -1,6 +1,6 @@
 {
   "name": "thereallo",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Thereallo's portfilio inside of the terminal.",
   "type": "module",
   "bin": {
@@ -30,19 +30,19 @@
     "dist"
   ],
   "devDependencies": {
-    "@biomejs/biome": "2.4.7",
-    "@types/bun": "latest",
+    "@biomejs/biome": "2.4.14",
+    "@types/bun": "^1.3.13",
     "@types/react": "^19.2.14",
     "lint-staged": "^16.4.0",
-    "typescript": "^5",
-    "ultracite": "7.3.2"
+    "typescript": "^6.0.3",
+    "ultracite": "7.6.3"
   },
   "dependencies": {
     "@inkjs/ui": "^2.0.0",
-    "ink": "^6.8.0",
+    "ink": "^7.0.1",
     "ink-big-text": "^2.0.0",
     "ink-gradient": "^4.0.0",
-    "react": "^19.2.4"
+    "react": "^19.2.5"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": [

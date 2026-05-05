@@ -1,15 +1,27 @@
-# npx-thereallo
+# thereallo
 
-To install dependencies:
+A terminal portfolio. Run it without installing:
+
+```bash
+bunx thereallo
+# or any other package manager of your choice
+```
+
+## Development
 
 ```bash
 bun install
+bun run dev
 ```
 
-To run:
+## Build
 
 ```bash
-bun run index.ts
+bun run build
 ```
 
-This project was created using `bun init` in bun v1.3.7. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+Built with [Ink](https://github.com/vadimdemedes/ink) and React.
+
+## License
+
+MIT
